@@ -1,0 +1,22 @@
+{
+  "name": "employees-details",
+  "version": "1.0.0",
+  "description": "## Your Task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rimadas9878/Employees-Details.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rimadas9878/Employees-Details/issues"
+  },
+  "homepage": "https://github.com/rimadas9878/Employees-Details#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
