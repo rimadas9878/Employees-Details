@@ -1,3 +1,7 @@
+const generateManager = new Manager()
+const generateEngineer = new Engineer()
+const generateIntern = new Intern()
+
 function generateTeam(answers){
     return`
     <!DOCTYPE html>
