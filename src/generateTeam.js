@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+function generateTeam(answers){
+    return`
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,32 +24,34 @@
             <div class="managerName"></div>
             <div class="card-header" id="designation">Manager <i class='fas fa-user-check'></i></div>
             <div class="card-body">
-              <p class="card-text"><b>Name : </b></p>
-              <p class="card-text"><b>ID : </b></p>
-              <p class="card-text"><b>Email :</b><a href="" target="_blank"></a></p>
-              <p class="card-text"><b>Phone Number :</b> </p>
+              <p class="card-text"><b>Name : </b>${answers.manager_name}</p>
+              <p class="card-text"><b>ID : </b>${answers.manager_employee_id}</p>
+              <p class="card-text"><b>Email :</b><a href="${answers.manager_email}" target="_blank"></a></p>
+              <p class="card-text"><b>Phone Number :</b>${answers.manager_office_phone_number}</p>
             </div>
           </div>
           <div class="card text-white bg-danger mb-3" id="grids" style="max-width: 18rem;">
             <div class="enginnerName"></div>
             <div class="card-header" id="designation">Engineer <i class='fas fa-user-cog'></i></div>
             <div class="card-body">
-              <p class="card-text"><b>Name : </b></p>
-              <p class="card-text"><b>ID : </b></p>
-              <p class="card-text"><b>Email :</b><a href="" target="_blank"></a></p>
-              <p class="card-text"><b> GitHub username :</b><a href="" target="_blank"></a></p>
+              <p class="card-text"><b>Name : </b>${answers.engineer_name}</p>
+              <p class="card-text"><b>ID : </b>${answers.engineer_employee_id}</p>
+              <p class="card-text"><b>Email :</b><a href="${answers.engineer_email}" target="_blank"></a></p>
+              <p class="card-text"><b> GitHub username :</b><a href="${answers.git_details}" target="_blank"></a></p>
             </div>
         </div>
         <div class="card text-white bg-warning mb-3" id="grids" style="max-width: 18rem;">
             <div class="traineeName"></div>
             <div class="card-header" id="designation">Intern <i class='fas fa-user-graduate'></i></div>
             <div class="card-body">
-              <p class="card-text"><b>Name : </b></p>
-              <p class="card-text"><b>ID : </b></p>
-              <p class="card-text"><b>Email :</b><a href="" target="_blank"></a></p>
-              <p class="card-text"><b>School Name :</b> </p>
+              <p class="card-text"><b>Name : </b>${answers.trainee_name}</p>
+              <p class="card-text"><b>ID : </b>${answers.trainee_employee_id}</p>
+              <p class="card-text"><b>Email :</b><a href="${answers.trainee_email}" target="_blank"></a></p>
+              <p class="card-text"><b>School Name :</b>${answers.trainee_school}</p>
             </div>
           </div>
     </section>
 </body>
 </html>
+    `
+} 
