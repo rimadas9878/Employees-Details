@@ -26,7 +26,7 @@ function generateTeam(answers){
             <div class="card-body">
               <p class="card-text"><b>Name : </b>${answers.manager_name}</p>
               <p class="card-text"><b>ID : </b>${answers.manager_employee_id}</p>
-              <p class="card-text"><b>Email :</b><a href="${answers.manager_email}" target="_blank"></a></p>
+              <p class="card-text"><b>Email :</b><a href="mailto:${answers.manager_email}" target="_blank"></a></p>
               <p class="card-text"><b>Phone Number :</b>${answers.manager_office_phone_number}</p>
             </div>
           </div>
@@ -36,7 +36,7 @@ function generateTeam(answers){
             <div class="card-body">
               <p class="card-text"><b>Name : </b>${answers.engineer_name}</p>
               <p class="card-text"><b>ID : </b>${answers.engineer_employee_id}</p>
-              <p class="card-text"><b>Email :</b><a href="${answers.engineer_email}" target="_blank"></a></p>
+              <p class="card-text"><b>Email :</b><a href="mailto:${answers.engineer_email}" target="_blank"></a></p>
               <p class="card-text"><b> GitHub username :</b><a href="${answers.git_details}" target="_blank"></a></p>
             </div>
         </div>
@@ -46,7 +46,7 @@ function generateTeam(answers){
             <div class="card-body">
               <p class="card-text"><b>Name : </b>${answers.trainee_name}</p>
               <p class="card-text"><b>ID : </b>${answers.trainee_employee_id}</p>
-              <p class="card-text"><b>Email :</b><a href="${answers.trainee_email}" target="_blank"></a></p>
+              <p class="card-text"><b>Email :</b><a href="mailto:${answers.trainee_email}" target="_blank"></a></p>
               <p class="card-text"><b>School Name :</b>${answers.trainee_school}</p>
             </div>
           </div>
