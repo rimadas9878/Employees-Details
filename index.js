@@ -1,6 +1,7 @@
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
+const generateTeam = require('./src/generateTeam');
 
 //Adding the inquirer and fs packages
 const inquirer = require('inquirer');
@@ -78,7 +79,10 @@ function enginerOrInternOrExit() {
             else if (engineer_or_intern === 'Intern') {
                 traineeQuestion()
             } else {
-                console.log(emploeeDB);
+                fs.writeFileSync("./dist/index.html",generateTeam(emploeeDB),function(err){
+                    if(err) throw err;
+                })
+                console.log(emploeeDB, "Team HTML generation complete");
             }
 
 
@@ -136,8 +140,8 @@ const engineerQuestion = () => {
             }
         },
     ])
-        .then(({ engineerName, engineerId, engineerEmail, engineerGitDetails }) => {
-            const newEngineer = new Engineer(engineerName, engineerId, engineerEmail, engineerGitDetails)
+        .then(({ engineer_name, engineer_employee_id, engineer_email, git_details }) => {
+            const newEngineer = new Engineer(engineer_name, engineer_employee_id, engineer_email, git_details)
             emploeeDB.push(newEngineer)
             enginerOrInternOrExit()
         })
