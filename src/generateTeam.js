@@ -39,6 +39,7 @@ function generateTeam(answers) {
 }
 function generateManager(answers) {
     return `
+    <section id="detailsContainer">
     <div class="card text-white bg-success mb-3" id="grids" style="max-width: 18rem;">
             <div class="managerName"></div>
             <div class="card-header" id="designation">Manager <i class='fas fa-user-check'></i></div>

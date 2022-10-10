@@ -14,9 +14,8 @@ body{
 #detailsContainer{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    
-    
+    justify-content: center;  
+    flex-wrap: wrap;
 }
 #grids{
     margin: 5px;
@@ -27,4 +26,20 @@ body{
 #designation{
     text-align: center;
     font-size: larger;
+}
+@media (max-width:768px) {
+    body {
+        width: 100%;
+    }
+}
+
+@media (max-width:481px) {
+    body {
+        width: 50%;
+    }
+}
+@media (max-width:992px) {
+    body {
+        width: 50%;
+    }
 }
