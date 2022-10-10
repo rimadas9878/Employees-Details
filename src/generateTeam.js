@@ -70,7 +70,7 @@ function generateEngineer(answers) {
 function generateIntern(answers) {
     return `
     <div class="card text-white bg-warning mb-3" id="grids" style="max-width: 18rem;">
-        <div class="traineeName"></div>
+        <div class="internName"></div>
          <div class="card-header" id="designation">Intern <i class='fas fa-user-graduate'></i></div>
     <div class="card-body">
     <p class="card-text"><b>Name : </b>${answers.name}</p>

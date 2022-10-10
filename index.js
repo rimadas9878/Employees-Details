@@ -77,7 +77,7 @@ function enginerOrInternOrExit() {
                 engineerQuestion()
             }
             else if (engineer_or_intern === 'Intern') {
-                traineeQuestion()
+                internQuestion()
             } else {
                 fs.writeFileSync("./dist/index.html",generateTeam(emploeeDB),function(err){
                     if(err) throw err;
@@ -89,9 +89,6 @@ function enginerOrInternOrExit() {
         })
 
 }
-
-
-
 
 const engineerQuestion = () => {
     inquirer.prompt([
@@ -147,14 +144,14 @@ const engineerQuestion = () => {
         })
 }
 
-const traineeQuestion = () => {
+const internQuestion = () => {
     inquirer.prompt([
         {
             type: 'input',
-            name: 'trainee_name',
-            message: 'Enter the name of the trainee working in the project',
-            validate: (traineeName) => {
-                if (traineeName === '') {
+            name: 'intern_name',
+            message: 'Enter the name of the intern working in the project',
+            validate: (internName) => {
+                if (internName === '') {
                     return 'Please enter a valid name'
                 }
                 return true
@@ -162,10 +159,10 @@ const traineeQuestion = () => {
         },
         {
             type: 'input',
-            name: 'trainee_employee_id',
-            message: 'Enter the Id of the trainee',
-            validate: (traineeId) => {
-                if (traineeId === '') {
+            name: 'intern_employee_id',
+            message: 'Enter the Id of the intern',
+            validate: (internId) => {
+                if (internId === '') {
                     return 'Incorrect id entered'
                 }
                 return true
@@ -173,10 +170,10 @@ const traineeQuestion = () => {
         },
         {
             type: 'input',
-            name: 'trainee_email',
-            message: 'Enter the email address of the trainee',
-            validate: (traineeEmail) => {
-                if (traineeEmail === '') {
+            name: 'intern_email',
+            message: 'Enter the email address of the intern',
+            validate: (internEmail) => {
+                if (internEmail === '') {
                     return 'Please enter a valid email address'
                 }
                 return true
@@ -184,19 +181,19 @@ const traineeQuestion = () => {
         },
         {
             type: 'input',
-            name: 'trainee_school',
+            name: 'intern_school',
             message: 'From which school did you Graduated?',
-            validate: (traineeSchool) => {
-                if (traineeSchool === '') {
+            validate: (internSchool) => {
+                if (internSchool === '') {
                     return 'Please enter a School'
                 }
                 return true
             }
         },
     ])
-        .then(({ trainee_name, trainee_employee_id, trainee_email, trainee_school }) => {
-            const newTrainee = new Intern(trainee_name, trainee_employee_id, trainee_email, trainee_school)
-            emploeeDB.push(newTrainee)
+        .then(({ intern_name, intern_employee_id, intern_email, intern_school }) => {
+            const newintern = new Intern(intern_name, intern_employee_id, intern_email, intern_school)
+            emploeeDB.push(newintern)
             enginerOrInternOrExit()
         })
 }
