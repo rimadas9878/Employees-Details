@@ -60,7 +60,7 @@ function generateEngineer(answers) {
             <div class="card-body">
               <p class="card-text"><b>Name : </b>${answers.name}</p>
               <p class="card-text"><b>ID : </b>${answers.id}</p>
-              <p class="card-text"><b>Email :</b><a href="mailto:${email}" target="_blank"></a></p>
+              <p class="card-text"><b>Email :</b><a href="mailto:${answers.email}" target="_blank"></a></p>
               <p class="card-text"><b> GitHub username :</b><a href="${answers.gitHub}" target="_blank"></a></p>
             </div>
         </div>
