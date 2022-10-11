@@ -6,6 +6,8 @@ const generateTeam = require('./src/generateTeam');
 //Adding the inquirer and fs packages
 const inquirer = require('inquirer');
 const fs = require('fs');
+
+
 const emploeeDB = []
 //List of questions 
 console.log("Answer the below questions to create a Team")
@@ -79,10 +81,10 @@ function enginerOrInternOrExit() {
             else if (engineer_or_intern === 'Intern') {
                 internQuestion()
             } else {
-                fs.writeFileSync("./dist/index.html",generateTeam(emploeeDB),function(err){
-                    if(err) throw err;
+                fs.writeFileSync("./dist/index.html", generateTeam(emploeeDB), function (err) {
+                    if (err) throw err;
                 })
-                console.log(emploeeDB, "Team HTML generation complete");
+                console.log(emploeeDB, "HTML generation complete sucessfully");
             }
 
 
