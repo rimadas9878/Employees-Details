@@ -39,14 +39,13 @@ function generateTeam(answers) {
 }
 function generateManager(answers) {
     return `
-    <section id="detailsContainer">
     <div class="card text-white bg-success mb-3" id="grids" style="max-width: 18rem;">
             <div class="managerName"></div>
             <div class="card-header" id="designation">Manager <i class='fas fa-user-check'></i></div>
             <div class="card-body">
               <p class="card-text"><b>Name : </b>${answers.name}</p>
               <p class="card-text"><b>ID : </b>${answers.id}</p>
-              <p class="card-text"><b>Email :</b><a href="mailto:${answers.email}" target="_blank">${answers.email}</a></p>
+              <p class="card-text"><b>Email : </b><a href="mailto:${answers.email}" target="_blank">${answers.email}</a></p>
               <p class="card-text"><b>Phone Number :</b>${answers.officeNumber}</p>
             </div>
     </div>
@@ -61,7 +60,7 @@ function generateEngineer(answers) {
             <div class="card-body">
               <p class="card-text"><b>Name : </b>${answers.name}</p>
               <p class="card-text"><b>ID : </b>${answers.id}</p>
-              <p class="card-text"><b>Email :</b><a href="mailto:${answers.email}" target="_blank">${answers.email}</a></p>
+              <p class="card-text"><b>Email : </b><a href="mailto:${answers.email}" target="_blank">${answers.email}</a></p>
               <p class="card-text"><b> GitHub username :</b><a href="${answers.gitHub}" target="_blank">${answers.gitHub}</a></p>
             </div>
         </div>
@@ -76,7 +75,7 @@ function generateIntern(answers) {
     <div class="card-body">
     <p class="card-text"><b>Name : </b>${answers.name}</p>
     <p class="card-text"><b>ID : </b>${answers.id}</p>
-    <p class="card-text"><b>Email :</b><a href="mailto:${answers.email}" target="_blank">${answers.email}</a></p>
+    <p class="card-text"><b>Email : </b><a href="mailto:${answers.email}" target="_blank">${answers.email}</a></p>
     <p class="card-text"><b>School Name :</b>${answers.school}</p>
     </div>
     </div>
