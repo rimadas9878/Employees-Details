@@ -1,7 +1,7 @@
 const Manager = require('../lib/Manager');
 
 describe("Manager", () => {
-    describe("Initialization", () => {
+   
         it("Should be able to display manager office number", () =>{
             const value = 12345;
             const manager = new Manager("rima", 1, "abc@test.com",value);
@@ -25,4 +25,3 @@ describe("Manager", () => {
         });
 
     });
-});

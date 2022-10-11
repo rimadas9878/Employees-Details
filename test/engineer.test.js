@@ -1,7 +1,7 @@
 const Engineer = require('../lib/Engineer');
 
 describe("Engineer", () => {
-    describe("Initialization", () => {
+    
         it("Should be able to display GitHub value", () =>{
             const value = "abc@git.com";
             const eng = new Engineer("rima", 1, "abc@test.com",value);
@@ -11,7 +11,7 @@ describe("Engineer", () => {
         describe("getgitHub", () => {
             it("Should be able to get gitHub Url", () => {
                 const value = "abc@git.com";
-                const emp = new Employee("rima", 1, "abc@test.com", value);
+                const emp = new Engineer("rima", 1, "abc@test.com", value);
                 expect(emp.getgitHub()).toBe(value);
             });
         });
@@ -25,4 +25,3 @@ describe("Engineer", () => {
         });
 
     });
-});

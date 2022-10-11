@@ -1,7 +1,6 @@
 const Intern = require('../lib/Intern');
 
 describe("Intern", () => {
-    describe("Initialization", () => {
         it("Should be able to display the value entered for school", () =>{
             const value = "schoolValue";
             const intern = new Intern("rima", 1, "abc@test.com", value);
@@ -25,4 +24,3 @@ describe("Intern", () => {
         });
 
     });
-});
