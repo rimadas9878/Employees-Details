@@ -35,4 +35,4 @@ Note
     -https://drive.google.com/file/d/1YsdgzdUI1ThLMEuv3hlUvGrDVbYUU2DC/view?usp=sharing)
 
 ## Image of the HTML file
-<img src="/Users/rimadas/Desktop/Bootcamp/Assignment/Assignment10-Employee-Details/Employees-Details/media/Team-generator.png" alt="Team-generator"/>
+<img src="./Team-generator.png" alt="Team-generator"/>
