@@ -13,7 +13,7 @@ describe("Engineer", () => {
 
                 const value = "abc@git.com";
                 const emp = new Employee(value);
-                expect(emp.getgitHub()).toBe(value);
+                expect(emp.getgitHub()).toBe("rima", 1, "abc@test.com", value);
             });
         });
 
