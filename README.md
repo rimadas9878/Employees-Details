@@ -34,5 +34,9 @@ Note
  3. Walkthrough video that displays the test result
     -https://drive.google.com/file/d/1YsdgzdUI1ThLMEuv3hlUvGrDVbYUU2DC/view?usp=sharing)
 
+
+## Link of the GitHub
+<a href="https://github.com/rimadas9878/Employees-Details">Employees-Details</a>
+
 ## Image of the HTML file
 <img src="./Team-generator.png" alt="Team-generator"/>
