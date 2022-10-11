@@ -5,7 +5,7 @@ describe("Manager", () => {
         it("Should be able to display manager office number", () =>{
             const value = 12345;
             const manager = new Manager("rima", 1, "abc@test.com",value);
-            expect(manager.gitHub).toBe("value");
+            expect(manager.officeNumber).toBe(value);
         });
 
         describe("getOfficeNumber", () => {

@@ -5,14 +5,14 @@ describe("Intern", () => {
         it("Should be able to display the value entered for school", () =>{
             const value = "schoolValue";
             const intern = new Intern("rima", 1, "abc@test.com", value);
-            expect(intern.school).toBe("value");
+            expect(intern.school).toBe(value);
         });
 
         describe("getSchool", () => {
             it("Should be able to get the school value", () => {
                 const value = "schoolValue";
                 const intern = new Intern("rima", 1, "abc@test.com", value);
-                expect(intern.getgitHub()).toBe(value);
+                expect(intern.getSchool()).toBe(value);
             });
         });
 

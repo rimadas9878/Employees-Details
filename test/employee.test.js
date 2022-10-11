@@ -51,7 +51,7 @@ describe("Employee", () => {
         });
 
         describe("getRole", () => {
-            it("Should be able to add content as per role", () => {
+            it("Should be able to add a new employee", () => {
                 const value = "Employee";
                 const emp = new Employee("rima", 1, "abc@test.com");
                 expect(emp.getRole()).toBe(value);
